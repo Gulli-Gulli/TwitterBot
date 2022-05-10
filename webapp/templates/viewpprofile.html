@@ -1,0 +1,29 @@
+{% extends 'base_u.html' %}
+{% block content %}
+
+<center>
+<h2>View Profile</h2>
+<br>
+<table id="tab" width="50%">
+<tr>
+	<th width="20%">Name</td>
+	<td>{{ data.name }}</td>
+</tr>
+<tr>
+	<th>Email</td>
+	<td>{{ data.email }}</td>
+</tr>
+<tr>
+	<th>Gender</td>
+	<td>{{ data.gender }}</td>
+</tr>
+<tr>
+	<th>Zip</td>
+	<td>{{ data.zip }}</td>
+</tr>
+<tr>
+	<th>Age</td>
+	<td>{{ data.age }}</td>
+</tr>
+</table>
+{% endblock %}

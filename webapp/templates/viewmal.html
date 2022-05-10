@@ -1,0 +1,20 @@
+{% extends 'adminbase.html' %}
+{% block content %}
+
+<center>
+<h2>Identified Malware Bots are </h2>
+<br>
+<table id="tab" width="50%">
+
+<TR><TH>Sno<th width="70%">UserId 
+<tr>{% for d in tweets %}
+
+<tr><td>{{forloop.counter}}<td>{{d.userid}}
+
+{% endfor %}
+
+</table>
+<br><br>
+
+</table>
+{% endblock %}

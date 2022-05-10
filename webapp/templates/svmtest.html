@@ -1,0 +1,24 @@
+{% extends 'adminbase.html' %}
+{% block content %}
+
+
+
+<center>
+<font size="+1" color="red">{{msg}}</font>
+<br><br><br>
+
+<font size="" color=""><h2>Upload Testset upload SVM:</h2><br></font>
+<form method="post" action="/svmprediction/">
+	{% csrf_token %}
+	<table id="tab" width="40%">
+<tr><td>
+
+	<input type="file" name="tfile" required accept=".csv">
+<tr><td>
+	<input type="submit" value="Upload">
+</table>
+</form>
+<br><br><br><br><br>	
+
+
+{% endblock %}

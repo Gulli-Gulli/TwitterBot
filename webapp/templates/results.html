@@ -1,0 +1,34 @@
+
+
+{% extends 'base_u.html' %}
+{% block content %}
+
+
+
+
+<h2>Results</h1>
+<br>
+
+<br><br>
+
+<table id="tab"  id="tab" width="90%">
+<TR><TH>Sno<th width="70%">Tweets<th width="20%">UserId <th>
+<tr>{% for d in tweets %}
+
+<tr><td>{{forloop.counter}}<td>{{d.tweet}}<td>{{d.userid}}<td>{{d.status}}
+
+{% endfor %}
+
+</table>
+<br><br>
+
+
+</table>
+
+</center>
+<br><br>
+
+
+<br><br>
+
+{% endblock %}
